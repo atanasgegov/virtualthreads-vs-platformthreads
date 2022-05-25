@@ -1,0 +1,12 @@
+# the logging configuration is here
+logging:
+  level:
+    root: INFO
+    com.akg: DEBUG
+
+commons:
+  threads-executor: { 
+    max-number: 100_000,
+    pool-size: 0, # valid only for platform threads
+    type: virtual # it accepts values as: virtual, platform
+  }
